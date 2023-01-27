@@ -21,6 +21,7 @@ export class QuizzComponent {
 
   finished:boolean = false
 
+
   constructor() {}
 
   ngOnInit(): void{
@@ -34,7 +35,6 @@ export class QuizzComponent {
       this.questionIndex = 0
       this.questionMaxIndex = this.questions.length
     }
-
 
   }
 
@@ -66,8 +66,13 @@ export class QuizzComponent {
         return current
       }
     })
+ 
     return result
   }
+  
+
+
+
 
   
 
